@@ -1,0 +1,2 @@
+Clean Laptop es un juego roguelike en el que debes limpiar el portátil del trabajo de todo tipo de archivos comprometidos que puedan pillar tus jefes para evitar que te despidan.
+El entorno del juego es el de un PC donde el jugador debe navegar por carpetas fijándose en todo lo que sobre o no sea correcto.
