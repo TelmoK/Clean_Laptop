@@ -5,12 +5,12 @@
 class DirectoryTreeNode
 {
 protected:
-	DirectoryTreeNode* parent;
 	std::string name;
 	std::string root;
 
 public:
 
+	DirectoryTreeNode* parent;
 	DirectoryTreeNode(DirectoryTreeNode* _parent = nullptr, std::string _name = "") : parent(_parent), name(_name)
 	{
 		update_root_path();
@@ -153,6 +153,10 @@ int main()
 	folder->addFolder(folder2);
 
 	c->addFolder(folder);
+
+	DirectoryTreeNode* folder2_cpy = folder->get_copy();
+	folder2_cpy->parent = c;
+	c->addFolder(folder2_cpy);
 
 	DirectoryTree d_tree(c);
 	d_tree.print(std::cout);

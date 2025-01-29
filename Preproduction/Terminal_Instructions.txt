@@ -1,0 +1,47 @@
+copy
+Copies one or more files to another location.
+
+del
+Deletes one or more files. For example, del file.txt deletes “file.txt” from the current directory.
+
+rename (or ren)
+Renames a file. For example, rename file.txt newfile.txt changes the file’s name to “newfile.txt”.
+
+xcopy
+Copies files and directories, including directory trees and system/hidden files, optionally using various parameters for more control.
+
+find
+Searches for a text string in a file or files, enabling simple text filtering tasks.
+
+robocopy
+Robust tool for syncing directories, ideal for backups.
+
+subst
+Maps a local folder as a drive letter.
+
+attrib
+Changes attributes of a file or directory. You can also use this CMD command in Windows 11: attrib -h -s -r C:pathtofolder to show hidden files.
+
+cipher
+Encrypts or decrypts files and folders.
+
+cd
+Changes your current directory.
+
+cd /
+Navigates to the root directory.
+
+dir OR ls
+Displays a list of files and subdirectories in a directory.
+
+mkdir (or md)
+Creates a new directory.
+
+rmdir (or rd)
+Removes a directory.
+
+tree
+Graphically displays the folder structure of a drive or path.
+
+pwd
+Print working directory
