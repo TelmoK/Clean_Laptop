@@ -44,4 +44,4 @@ tree
 Graphically displays the folder structure of a drive or path.
 
 pwd
-Print working directory
+Print working directory.

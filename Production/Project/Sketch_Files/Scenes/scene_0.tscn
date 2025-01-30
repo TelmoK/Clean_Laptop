@@ -1,3 +1,6 @@
-[gd_scene format=3 uid="uid://cefpjfua3lna"]
+[gd_scene load_steps=2 format=3 uid="uid://cefpjfua3lna"]
+
+[ext_resource type="Script" path="res://Sketch_Files/Scripts/FileTreeTest.cs" id="1_dnk75"]
 
 [node name="Scene 0" type="Node2D"]
+script = ExtResource("1_dnk75")
