@@ -1,13 +1,12 @@
 using Godot;
 using System;
+using System.Collections.Generic;
 
 namespace FileSystem
 {
 	public partial class DirectoryTree
 	{
 		private DirectoryTreeFolderNode root;
-
-		private DirectoryTreeNode clipboardElement;
 
 		public DirectoryTree(DirectoryTreeFolderNode root = null)
 		{

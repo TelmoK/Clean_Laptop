@@ -21,7 +21,7 @@ namespace FileSystem
             get => files.AsReadOnly();
         }
 
-        public DirectoryTreeFolderNode(DirectoryTreeNode parent = null, String name = "File") : base(parent, name)
+        public DirectoryTreeFolderNode(DirectoryTreeNode parent = null, String name = "Folder") : base(parent, name)
         {
             subfolders = new List<DirectoryTreeFolderNode>();
             files = new List<DirectoryTreeFileNode>();
@@ -51,12 +51,12 @@ namespace FileSystem
             return copy;
         }
 
-        public void addFolder(DirectoryTreeFolderNode folder)
+        public void AddFolderNode(DirectoryTreeFolderNode folder)
         {
             subfolders.Add(folder);
         }
 
-        public void addFile(DirectoryTreeFileNode file)
+        public void AddFileNode(DirectoryTreeFileNode file)
         {
             files.Add(file);
         }

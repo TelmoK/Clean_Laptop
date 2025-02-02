@@ -8,21 +8,21 @@ public partial class FileTreeTest : Node
 	public override void _Ready()
 	{
 		DirectoryTreeFolderNode c = new DirectoryTreeFolderNode(null, "C://");
-		c.addFile(new DirectoryTreeFileNode(c, "file.txt", "txt"));
-		c.addFile(new DirectoryTreeFileNode(c, "file2.txt", "txt"));
+		c.AddFileNode(new DirectoryTreeFileNode(c, "file.txt", "txt"));
+		c.AddFileNode(new DirectoryTreeFileNode(c, "file2.txt", "txt"));
 		DirectoryTreeFolderNode folder = new DirectoryTreeFolderNode(c, "Folder");
-		folder.addFile(new DirectoryTreeFileNode(folder, "file3.txt", "txt"));
-		folder.addFile(new DirectoryTreeFileNode(folder, "file4.txt", "txt"));
+		folder.AddFileNode(new DirectoryTreeFileNode(folder, "file3.txt", "txt"));
+		folder.AddFileNode(new DirectoryTreeFileNode(folder, "file4.txt", "txt"));
 
 		DirectoryTreeFolderNode folder2 = new DirectoryTreeFolderNode(folder, "Folder 2");
-		folder2.addFile(new DirectoryTreeFileNode(folder2, "file5.txt", "txt"));
-		folder.addFolder(folder2);
+		folder2.AddFileNode(new DirectoryTreeFileNode(folder2, "file5.txt", "txt"));
+		folder.AddFolderNode(folder2);
 
-		c.addFolder(folder);
+		c.AddFolderNode(folder);
 
 		DirectoryTreeFolderNode folder2_cpy = folder.GetCopy();
 		folder2_cpy.SetParentAs(c);
-		c.addFolder(folder2_cpy);
+		c.AddFolderNode(folder2_cpy);
 
 		DirectoryTree d_tree = new DirectoryTree(c);
 		d_tree.Print();

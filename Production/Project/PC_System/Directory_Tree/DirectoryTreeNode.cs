@@ -49,6 +49,11 @@ namespace FileSystem
 			root = parent.Root + "\\" + parent.Name;
 		}
 
+		public void SetName(String newName)
+		{
+			name = newName;
+		}
+
 		public abstract DirectoryTreeNode GetCopy();
 	}
 }
